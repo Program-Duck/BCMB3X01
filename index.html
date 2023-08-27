@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
-  <body class="dark">
+  <body class="light">
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas"></canvas>
     </div>
@@ -25,11 +25,11 @@
     <script>
       const hideFullScreenButton = "";
       const buildUrl = "Build";
-      const loaderUrl = buildUrl + "/20230509.1.loader.js";
+      const loaderUrl = buildUrl + "/USYD 20230827.1.loader.js";
       const config = {
-        dataUrl: buildUrl + "/20230509.1.data.unityweb",
-        frameworkUrl: buildUrl + "/20230509.1.framework.js.unityweb",
-        codeUrl: buildUrl + "/20230509.1.wasm.unityweb",
+        dataUrl: buildUrl + "/USYD 20230827.1.data.unityweb",
+        frameworkUrl: buildUrl + "/USYD 20230827.1.framework.js.unityweb",
+        codeUrl: buildUrl + "/USYD 20230827.1.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "University of Sydney",
         productName: "Liquid Handling",
@@ -88,5 +88,11 @@
       };
       document.body.appendChild(script);
     </script>
+    <script>
+      function OpenImageInNewTab(dataURI) {
+          var win = window.open();
+          win.document.write('<img src="' + dataURI + '" width="100%" height="100%"/>');
+      }
+  </script>
   </body>
 </html>
